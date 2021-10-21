@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppis", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(#131d33, #2faedd);
+  overflow-x: hidden;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  letter-spacing: 2px;
+  text-shadow: 1vh 1vh 3vh black;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active {
+  background: #fff;
+  color: #131d33;
+  box-shadow: 0.3vh 0.3vh 3vh black;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #241533, transparent);
+  z-index: 100;
+}
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+section img#moon {
+  mix-blend-mode: screen;
+}
+section img#back1 {
+  z-index: 10;
+}
+section img#back2 {
+  z-index: 9;
+}
+section img#back3 {
+  z-index: 8;
+}
+
+#text {
+  position: absolute;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 3vh;
+  z-index: 8;
+  text-align: center;
+  transform: translateY(-10vh);
+  text-shadow: 1vh 1vh 3vh black;
+}
+#btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: #fff;
+  color: #131d33;
+  font-size: 1.5em;
+  z-index: 9;
+  box-shadow: 0.5vh 0.5vh 3vh black;
+}
+.content {
+  position: relative;
+  background: linear-gradient(#241533, #37163c);
+  padding: 5% 15% 15% 15%;
+}
+
+.about {
+  height: 60vh;
+}
+.about,
+.projects,
+.cv,
+.contact {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2vh;
+  border-radius: 20px;
+  margin-bottom: 20vh;
+  color: white;
+}
+
+.table1 {
+  position: fixed;
+  top: 92%;
+  left: 5%;
+  z-index: 100;
+}
+
+.table1 td {
+  float: right;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 3vh;
+  padding: 0.7vh;
+  margin: 0.7vh;
+}
+
+.table2 {
+  position: fixed;
+  top: 90%;
+  left: 80%;
+  z-index: 100;
+}
+
+.table2 td {
+  float: right;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 3vh;
+  padding: 0.7vw;
+  margin: 0.7vw;
+}
+.table2 td:hover {
+  transform: scale(1.25);
+  transition: 1s;
+  box-shadow: 0.5vh 0.5vh 3vh rgb(82, 82, 82);
+}
+#ikona {
+  background-color: white;
+  border-radius: 0.7vh;
+  margin-left: 5vh;
+  height: 5vh;
+}
+#ikona:hover {
+  transform: scale(1.25);
+  transition: 1s;
+  box-shadow: 0.5vh 0.5vh 3vh rgb(82, 82, 82);
+}
+
+#myphoto {
+  background-color: rgba(0, 0, 0, 0.93);
+  border-radius: 2vh;
+  float: right;
+  margin-left: 3vw;
+  margin-right: 2vw;
+  height: 50vh;
+}
+
+#one,
+#two,
+#three,
+#four {
+  padding-top: 15%;
+}
+
+/* jezyk */
+.button_lang {
+  background-color: rgb(255, 255, 255, 0.8);
+  color: #131d33;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+.button_lang:hover,
+.current_lang {
+  transform: scale(1.25);
+}
