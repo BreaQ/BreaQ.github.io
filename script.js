@@ -18,3 +18,12 @@ window.addEventListener("scroll", function () {
   btn.style.marginTop = value * 1.5 + "px";
 });
 
+// redirect dla mobilnych
+
+if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+  if (document.cookie.indexOf("iphone_redirect=false") == -1) window.location = "http://graves-incorporated.com/test_sites/solera_mobile/";
+};
+if (screen.width <= 720) {
+  window.location = "mobile/index.php";
+};
+
