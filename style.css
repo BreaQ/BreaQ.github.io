@@ -16,11 +16,11 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 100px;
+  padding: 2% 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
+  z-index: 101;
 }
 header .logo {
   color: #fff;
@@ -37,13 +37,13 @@ header ul {
 }
 header ul li {
   list-style: none;
-  margin-left: 20px;
+  margin-left: 2vh;
 }
 header ul li a {
   text-decoration: none;
-  padding: 6px 15px;
+  padding: 0.6vh 1.5vh;
   color: #fff;
-  border-radius: 20px;
+  border-radius: 2vh;
 }
 header ul li a:hover,
 header ul li a.active {
