@@ -118,10 +118,11 @@ section img#back3 {
   background: linear-gradient(#241533, #37163c);
   padding: 5% 15% 15% 15%;
 }
-
+/*
 .about {
   height: 60vh;
-}
+  width: 70vw;
+} */
 .about,
 .projects,
 .cv,
@@ -132,6 +133,8 @@ section img#back3 {
   border-radius: 20px;
   margin-bottom: 20vh;
   color: white;
+  height: 60vh;
+  width: 70vw;
 }
 
 .table1 {
