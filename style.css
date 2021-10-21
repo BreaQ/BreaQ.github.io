@@ -114,7 +114,7 @@ section img#back3 {
   box-shadow: 0.5vh 0.5vh 3vh black;
 }
 .content {
-  position: relative;
+  position: flex;
   background: linear-gradient(#241533, #37163c);
   padding: 5% 15% 15% 15%;
 }
