@@ -21,9 +21,9 @@ window.addEventListener("scroll", function () {
 // redirect dla mobilnych
 
 if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-  if (document.cookie.indexOf("iphone_redirect=false") == -1) window.location = "http://graves-incorporated.com/test_sites/solera_mobile/";
+  if (document.cookie.indexOf("iphone_redirect=false") == -1) window.location = "";
 };
 if (screen.width <= 720) {
-  window.location = "mobile/index.php";
+  window.location = "";
 };
 
