@@ -18,7 +18,7 @@ window.addEventListener("scroll", function () {
   btn.style.marginTop = value * 1.5 + "px";
 });
 
-// redirect dla mobilnych
+// alert dla mobilnych
 
 function mobile() {
   if (navigator.userAgent.match(/iPhone/i)){
@@ -28,4 +28,6 @@ function mobile() {
   }
 }
 mobile();
+
+
 
