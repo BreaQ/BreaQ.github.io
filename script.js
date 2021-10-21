@@ -14,7 +14,6 @@ window.addEventListener("scroll", function () {
   back3.style.top = value * -0.25 + "px";
   back2.style.top = value * -0.17 + "px";
   text.style.marginTop = value * 1.5 + "px";
-  text.style.marginRight = value * 1.5 + "px";
   btn.style.marginTop = value * 1.5 + "px";
 });
 
