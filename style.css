@@ -127,7 +127,7 @@ section img#back3 {
 .projects,
 .cv,
 .contact {
-  position: relative;
+  position: flex;
   background: rgba(0, 0, 0, 0.5);
   padding: 2vh;
   border-radius: 20px;
