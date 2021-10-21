@@ -11,11 +11,11 @@ window.addEventListener("scroll", function () {
   let value = window.scrollY;
   stars.style.left = -value + "px";
   moon.style.top = value + "px";
-  back3.style.top = value * -0.25 + "px";
-  back2.style.top = value * -0.17 + "px";
-  text.style.marginTop = value * 1.5 + "px";
-  text.style.marginRight = value * 1.5 + "px";
-  btn.style.marginTop = value * 1.5 + "px";
+  back3.style.top = value * -0.3 + "px";
+  back2.style.top = value * -0.2 + "px";
+  text.style.marginTop = value * 1.4 + "px";
+  text.style.marginRight = value * 1.4 + "px";
+  btn.style.marginTop = value * 1.4 + "px";
 });
 
 // alert dla mobilnych
@@ -26,7 +26,7 @@ function mobile() {
   } else if (screen.width <=699) {
     alert ("Strona przeznaczona do przeglądania na większym ekranie");
   }
-}
+};
 mobile();
 
 
