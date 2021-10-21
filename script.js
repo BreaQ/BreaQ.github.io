@@ -20,10 +20,12 @@ window.addEventListener("scroll", function () {
 
 // redirect dla mobilnych
 
-if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-  if (document.cookie.indexOf("iphone_redirect=false") == -1) window.location = "";
-};
-if (screen.width <= 720) {
-  window.location = "";
-};
+function mobile() {
+  if (navigator.userAgent.match(/iPhone/i)){
+    alert ("Strona przeznaczona do przeglądania na większym ekranie");
+  } else if (screen.width <=699) {
+    alert ("Strona przeznaczona do przeglądania na większym ekranie");
+  }
+}
+mobile();
 
