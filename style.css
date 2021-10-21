@@ -114,7 +114,7 @@ section img#back3 {
   box-shadow: 0.5vh 0.5vh 3vh black;
 }
 .content {
-  position: flex;
+  position: relative;
   background: linear-gradient(#241533, #37163c);
   padding: 5% 15% 15% 15%;
 }
@@ -127,7 +127,7 @@ section img#back3 {
 .projects,
 .cv,
 .contact {
-  position: flex;
+  position: relative;
   background: rgba(0, 0, 0, 0.5);
   padding: 2vh;
   border-radius: 20px;
@@ -135,6 +135,7 @@ section img#back3 {
   color: white;
   height: 60vh;
   width: 70vw;
+  font-size: 2vh;
 }
 
 .table1 {
