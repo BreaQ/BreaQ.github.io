@@ -136,6 +136,21 @@ section img#back3 {
   height: 60vh;
   width: 70vw;
   font-size: 2vh;
+  box-shadow: 0.5vh 0.5vh 3vh black;
+}
+.projects {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 40vh);
+  grid-template-rows: repeat (3, 40vw);
+  font-size: 1.5rem;
+  outline: none;
+  text-align: center;
+}
+.projects :nth-child(1),
+.projects :nth-child(5) {
+  grid-column: span 3;
 }
 
 .table1 {
@@ -210,4 +225,9 @@ section img#back3 {
 .button_lang:hover,
 .current_lang {
   transform: scale(1.25);
+}
+
+#calc {
+  height: 20vh;
+  border-radius: 2vh;
 }
