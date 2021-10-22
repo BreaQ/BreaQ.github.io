@@ -9,7 +9,7 @@ body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
-  background-image: url(background.png);
+  background-image: url(/images/background.png);
   overflow: hidden;
 }
 
