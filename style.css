@@ -127,26 +127,23 @@ section img#back3 {
 .projects,
 .cv,
 .contact {
-  position: relative;
   background: rgba(0, 0, 0, 0.5);
   padding: 2vh;
-  border-radius: 20px;
+  border-radius: 2vh;
   margin-bottom: 20vh;
   color: white;
-  height: 60vh;
-  width: 70vw;
   font-size: 2vh;
   box-shadow: 0.5vh 0.5vh 3vh black;
-}
-.projects {
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-columns: repeat(3, 40vh);
-  grid-template-rows: repeat (3, 40vw);
   font-size: 1.5rem;
   outline: none;
   text-align: center;
+}
+.projects {
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat (3, 100px);
 }
 .projects :nth-child(1),
 .projects :nth-child(5) {
