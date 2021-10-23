@@ -243,3 +243,9 @@ section img#back3 {
   height: 20vh;
   border-radius: 2vh;
 }
+#one,
+#two,
+#three,
+#four {
+  padding-top: 15vh;
+}
