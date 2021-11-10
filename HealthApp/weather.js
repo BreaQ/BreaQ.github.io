@@ -15,20 +15,20 @@ window.addEventListener("load", () => {
     navigator.geolocation.getCurrentPosition(position => {
       long = position.coords.longitude;
       lat = position.coords.latitude;
-      console.log(geolocation);
+      console.log(long,lat);
       const api =
-        'https://api.weatherapi.com/v1/current.json?key=b8a998bfdaa54513985190258212610&q=`${long}`:`${lat}`&aqi=yes';
+        'https://api.weatherapi.com/v1/current.json?key=b8a998bfdaa54513985190258212610&q=52.25,21&aqi=yes';
       fetch(api)
         .then(response => {
           return response.json();
         })
         .then(data => {
-          const {temp, conditions, icon} = data.currentConditions;
-          // console.log(data.currentConditions); for later changes
-          temperatureDegree.textContent = temp;
-          temperatureDescription.textContent = conditions;
-          locationTimezone.textContent = data.timezone.replace(/_/," ");
-          let fahrenheit = (temp -32) *  (5/9);
+          const {temp_c, conditionText, icon} = data;
+          console.log(data);
+          temperatureDegree.textContent = temp_c;
+          temperatureDescription.textContent = condition.Text;
+          locationTimezone.textContent = tz_id.replace(/_/," ");
+          let fahrenheit = (temp_c -32) *  (5/9);
           setIcons(icon, document.querySelector(".icon"));
           temperatureSection.addEventListener('click', () =>{
             if(temperatureSpan.textContent === "°C"){
@@ -37,10 +37,10 @@ window.addEventListener("load", () => {
 
             } else {
               temperatureSpan.textContent = "°C";
-              temperatureDegree.textContent = temp;
+              temperatureDegree.textContent = temp_c;
             }
           })
-          if (temp >= 10 && conditions === "Clear"){
+          if (temp_c >= 10 && conditions === "Clear"){
             alert("This is a great day for your running training!")
           }
 
