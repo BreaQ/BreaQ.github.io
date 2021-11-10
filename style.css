@@ -174,20 +174,6 @@ section img#back3 {
   background: white;
   border-radius: 0.5vh;
 }
-.table1 {
-  position: fixed;
-  top: 92%;
-  left: 5%;
-  z-index: 100;
-}
-
-.table1 td {
-  float: right;
-  background-color: rgb(255, 255, 255, 0.8);
-  border-radius: 3vh;
-  padding: 0.7vh;
-  margin: 0.7vh;
-}
 
 .table2 {
   position: fixed;
@@ -239,8 +225,9 @@ section img#back3 {
   transform: scale(1.25);
 }
 
-#calc {
-  height: 20vh;
+.screens {
+  max-height: 20rem;
+  max-width: 15rem;
   border-radius: 2vh;
 }
 #one,
