@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
       long = position.coords.longitude;
       lat = position.coords.latitude;
       const api =
-        'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${lat}.&{long}/today?unitGroup=metric&key=DJ9F56F27LLYZYZH89UXMDM4Z&include=current';
+        'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/`${lat}`.`&{long}`/today?unitGroup=metric&key=DJ9F56F27LLYZYZH89UXMDM4Z&include=current';
       fetch(api)
         .then(response => {
           return response.json();
