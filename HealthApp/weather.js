@@ -15,8 +15,9 @@ window.addEventListener("load", () => {
     navigator.geolocation.getCurrentPosition(position => {
       long = position.coords.longitude;
       lat = position.coords.latitude;
+      console.log(geolocation);
       const api =
-        'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Lodz/today?unitGroup=metric&key=DJ9F56F27LLYZYZH89UXMDM4Z&include=current';
+        'https://api.weatherapi.com/v1/current.json?key=b8a998bfdaa54513985190258212610&q=`${long}`:`${lat}`&aqi=yes';
       fetch(api)
         .then(response => {
           return response.json();
