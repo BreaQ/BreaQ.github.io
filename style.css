@@ -172,7 +172,8 @@ section img#back3 {
 }
 .contact img {
   background: white;
-  border-radius: 0.5vh;
+  border-radius: .3rem;
+  object-fit: cover;
 }
 
 .table2 {
@@ -211,18 +212,6 @@ section img#back3 {
   border-radius: 2vh;
   height: 40vh;
   opacity: 0.8;
-}
-
-/* jezyk */
-.button_lang {
-  background-color: rgb(255, 255, 255, 0.8);
-  color: #131d33;
-  padding: 8px 20px;
-  border-radius: 5px;
-}
-.button_lang:hover,
-.current_lang {
-  transform: scale(1.25);
 }
 
 .screens {
