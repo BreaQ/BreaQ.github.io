@@ -1,0 +1,73 @@
+body {
+    background-image: url("./images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mainGame {
+    display: inline-grid;
+    border: 1px solid white;
+}
+.points {
+    columns: 1/3;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr;
+}
+.points div{
+    border: 1px solid yellow;
+}
+
+.instructions, .points {
+    border: 1px solid gray;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-shadow: .1rem .1rem 1rem black;
+}
+.instructions {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 1rem;
+    font-weight: normal;
+    background-color: rgba(0, 0, 0, 0.288);
+    
+
+}
+
+#instrhead {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#buttonsbot {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: center;
+    align-content: center;
+}
+#instruction{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#gameArea {
+    width: 1280px;
+    height: 720px;
+    border: 2px solid pink;
+}
+#gameArea2 {
+    width: 1280px;
+    height: 720px;
+    border: 2px solid black;
+    display: none;
+}
+

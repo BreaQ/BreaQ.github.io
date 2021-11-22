@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JS game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="mainGame">
+        <div class="points">
+            <div id="lives">
+                lives:
+            </div>
+            <div id="score">
+                Score:
+            </div>
+            <div id="time">
+                Time:
+            </div>
+        </div>
+        <div class="game">
+            <canvas id="gameArea"></canvas>
+            <canvas id="gameArea2"></canvas>
+        </div>
+        <div class="instructions">
+            <div id="instrhead">Instructions</div>
+            <div id="buttonsbot">
+            <button id="start" onclick="style.display = 'none'">START</button>
+            <button id="restart">RESTART</button>
+            </div>
+            <div id="instruction">Avoid or shot enemies, the longer  You live, the more points You get. Every 15 shot enemies You get 1 additional life. <br>
+                W - Jump ^ S - Stop ^ A - Left ^ D - Right ^ Space - Shot</div>
+        </div>
+    </div>
+    </div>
+    <script src="/game.js"></script>
+</body>
+</html>
