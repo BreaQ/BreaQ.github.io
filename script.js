@@ -17,8 +17,8 @@ window.addEventListener("scroll", function () {
   btn.style.marginTop = value * 1.5 + "px";
 });
 
-// alert dla mobilnych
-
+// alert dla mobilnych 
+/* fixed by @media tag in css files for mobile, but leaving for future use
 function mobile() {
   if (navigator.userAgent.match(/iPhone/i)){
     alert ("Strona przeznaczona do przeglądania na większym ekranie");
@@ -27,5 +27,7 @@ function mobile() {
   }
 };
 mobile();
+
+*/
 
 

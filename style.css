@@ -225,3 +225,54 @@ section img#back3 {
 #four {
   padding-top: 15vh;
 }
+
+
+/* For smaller devices phones etc */
+
+@media only screen and (max-width: 500px) {
+  header .logo {
+    font-weight: 200;
+    font-size: 1em;
+    background: rgba(0, 0, 0, 0.623);
+    border-radius: 10%;
+    box-shadow:  1vh 1vh 3vh black;
+  }
+  header ul {
+    display:none;
+  }  
+  .content {
+    padding: 1% 5% 15% 5%;
+  }
+  
+  .about,
+  .projects,
+  .cv,
+  .contact {
+    padding: 2vh;
+    font-size: 1em;
+    gap: 1em;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+  }
+  .projects :nth-child(1),
+  .projects :nth-child(5) {
+    grid-column: 1;
+  }
+  .cv {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .contact {
+    display: none;
+  }
+  .table2 {
+    left: 25%; 
+  }
+  
+  .table2 td {
+    border-radius: 2vh;
+  }
+}

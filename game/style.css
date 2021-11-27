@@ -1,5 +1,5 @@
 body {
-    background-image: url("./images/background.png");
+    background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -71,3 +71,26 @@ body {
     display: none;
 }
 
+/* for media,phones etc */
+
+@media only screen and (max-width: 500px) {
+    body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    }
+    
+    #gameArea {
+    max-width: 100vw;
+    height: 80vh;
+    border: 1px solid pink;
+    }
+    #gameArea2 {
+    max-width: 100vw;
+    height: 780vh;
+    border: 1px solid black;
+    display: none;
+    }
+
+}
+  
