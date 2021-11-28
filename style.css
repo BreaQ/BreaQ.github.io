@@ -240,6 +240,23 @@ section img#back3 {
   header ul {
     display:none;
   }  
+  #text {
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 1.3rem;
+    z-index: 8;
+    text-align: center;
+    transform: translateY(-10vh);
+    text-shadow: 1vh 1vh 3vh black;
+  }
+  #one,
+  #two,
+  #three,
+  #four {
+    display:none;
+  }
+  
   .content {
     padding: 1% 5% 15% 5%;
   }
@@ -249,7 +266,7 @@ section img#back3 {
   .cv,
   .contact {
     padding: 2vh;
-    font-size: 1em;
+    font-size: 1rem;
     gap: 1em;
   }
   .projects {
@@ -260,6 +277,21 @@ section img#back3 {
   .projects :nth-child(1),
   .projects :nth-child(5) {
     grid-column: 1;
+  }
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (4, auto);
+  }
+  .about :nth-child(1),
+  .about :nth-child(4),
+  .about :nth-child(5) {
+    grid-column: 1;
+  }
+  .about :nth-child(2) {
+    text-align: center;
+  }
+  .about :nth-child(3) {
+    grid-row: 3/2;
   }
   .cv {
     grid-template-columns: 1fr;
