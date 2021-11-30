@@ -144,9 +144,12 @@ section img#back3 {
   grid-column: span 3;
 }
 .about {
-  grid-template-columns: auto auto;
-  grid-template-rows: repeat (4, auto);
+  grid-template-columns: 1fr 1fr;
 }
+.about h2 {
+  font-size: 3rem;
+}
+
 .about :nth-child(1),
 .about :nth-child(4),
 .about :nth-child(5) {
