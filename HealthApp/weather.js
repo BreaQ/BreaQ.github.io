@@ -25,7 +25,7 @@ window.addEventListener("load", () => {
         })
         .then(data => {
           const {current, location} = data;
-          console.log(api);
+          console.log(data);
           temperatureDegree.textContent = current.temp_c;
           temperatureDescription.textContent = current.condition.text;
           locationTimezone.textContent = location.tz_id.replace("/"," - ");
