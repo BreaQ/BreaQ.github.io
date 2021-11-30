@@ -18,7 +18,7 @@ window.addEventListener("load", () => {
       lat = position.coords.latitude;
       console.log(long,lat);
       const api =
-        `https://api.weatherapi.com/v1/current.json?key=b8a998bfdaa54513985190258212610&q=${roundToTwo(long)}.${roundToTwo(lat)}&aqi=yes`;
+        `https://api.weatherapi.com/v1/current.json?key=b8a998bfdaa54513985190258212610&q=${roundToTwo(lat)},${roundToTwo(long)}&aqi=yes`;
       fetch(api)
         .then(response => {
           return response.json();
@@ -28,7 +28,7 @@ window.addEventListener("load", () => {
           console.log(data);
           temperatureDegree.textContent = current.temp_c;
           temperatureDescription.textContent = current.condition.text;
-          locationTimezone.textContent = location.name + " - " + location.region;
+          locationTimezone.textContent = location.country + " - " + location.name;
           conditionIcon.src = "https:"+current.condition.icon;
           let fahrenheit = (current.temp_c -32) *  (5/9);
           temperatureSection.addEventListener('click', () =>{
