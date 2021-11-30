@@ -24,12 +24,12 @@ window.addEventListener("load", () => {
           return response.json();
         })
         .then(data => {
-          const {current, location} = data;
+          const {current, location, condition} = data;
           console.log(data);
           temperatureDegree.textContent = current.temp_c;
           temperatureDescription.textContent = current.condition.text;
           locationTimezone.textContent = location.tz_id.replace("/"," - ");
-          conditionIcon.src = "https:"+current.condition.icon;
+          conditionIcon.src = "https:"+condition.icon;
           let fahrenheit = (current.temp_c -32) *  (5/9);
           temperatureSection.addEventListener('click', () =>{
             if(temperatureSpan.textContent === "°C"){
