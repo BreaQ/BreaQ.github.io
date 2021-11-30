@@ -28,7 +28,7 @@ window.addEventListener("load", () => {
           console.log(data);
           temperatureDegree.textContent = current.temp_c;
           temperatureDescription.textContent = current.condition.text;
-          locationTimezone.textContent = location.tz_id.replace("/"," - ");
+          locationTimezone.textContent = location.name + " - " + location.region;
           conditionIcon.src = "https:"+current.condition.icon;
           let fahrenheit = (current.temp_c -32) *  (5/9);
           temperatureSection.addEventListener('click', () =>{
